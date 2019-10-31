@@ -12,10 +12,7 @@ const AdminPost = require('../../model/adminPost');
 
 router.get('/messages', authMiddleware, async (req, res) => {
   try {
-    let user = await User.findById(req.user.id);
-    if (!user) {
-      return res.status(400).json({ msg: 'no user found' });
-    }
+    
     let posts = await Posts.find({ user: req.user.id });
     return res.json(posts);
   } catch (error) {
@@ -28,9 +25,8 @@ router.get('/messages', authMiddleware, async (req, res) => {
 //?access         private
 router.get('/', authMiddleware, async (req, res) => {
   try {
-    let posts = await AdminPost.find()
-      .sort({ createdAt: -1 })
-      .limit(5);
+    let posts = await AdminPost.findOne().sort({ createdAt: 1 });
+
     return res.json(posts);
   } catch (error) {
     console.log(error.message);
@@ -65,6 +61,9 @@ router.post(
       .isEmpty(),
     check('techSkills', 'Tech skills field cannot be empty')
       .not()
+      .isEmpty(),
+    check('title', 'title field cannot be empty')
+      .not()
       .isEmpty()
   ],
   async (req, res) => {
@@ -81,6 +80,7 @@ router.post(
       try {
         const {
           name,
+          title,
           institution,
           phone,
           email,
@@ -96,6 +96,7 @@ router.post(
 
         let adminPost = new AdminPost({
           name,
+          title,
           institution,
           phone,
           email,
@@ -130,6 +131,7 @@ router.post(
 router.put('/:id', authMiddleware, async (req, res) => {
   const {
     name,
+    title,
     institution,
     phone,
     email,
@@ -146,6 +148,7 @@ router.put('/:id', authMiddleware, async (req, res) => {
   //?create an update object
   const updateProfile = {};
   if (name) updateProfile.name = name;
+  if (title) updateProfile.title = title;
   if (institution) updateProfile.institution = institution;
   if (phone) updateProfile.phone = phone;
   if (email) updateProfile.email = email;

@@ -67,7 +67,7 @@ router.post(
       );
     } catch (error) {
       console.log(error.message);
-      return res.status(500).json({ msg: 'server down' });
+      return res.status(500).json({ msg: 'server down : Try Again later' });
     }
   }
 );

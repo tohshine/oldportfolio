@@ -6,27 +6,26 @@ const User = require('../../model/User');
 const profileCV = require('../../model/adminPost');
 
 //?route        POST  /api/client/cv
-//?desc           post form for client
+//?desc           post message from client
 //?access         public
 
 router.post(
   '/',
   [
-    check('name', 'name field cannot be empty')
+    check('name', 'name feild empty')
       .not()
       .isEmpty(),
-    check('email', ' email field cannot be empty')
+    check('email', 'email feild empty')
       .not()
       .isEmpty(),
-    check('message', 'message feild cannot be empty')
+    check('email', 'Bad email format').isEmail(),
+    check('message', 'message feild empty')
       .not()
       .isEmpty()
   ],
   async (req, res) => {
     const error = validationResult(req);
-    if (!error.isEmpty()) {
-      return res.status(400).json({ msg: error.array() });
-    }
+    if (!error.isEmpty()) return res.status(401).json( error.array() );
     try {
       const user = await User.findOne().sort({ date: 1 });
       if (!user) throw error;
@@ -39,7 +38,7 @@ router.post(
         user: user._id
       });
       await post.save();
-      return res.json(post);
+      return res.send('Message sent: Thanks for contacting me');
     } catch (error) {
       console.log(error.message);
       return res.status(500).json({ msg: 'server error' });

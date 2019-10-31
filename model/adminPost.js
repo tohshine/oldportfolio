@@ -5,6 +5,10 @@ const adminPostSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  title:{
+    type:String,
+    required:true
+  },
   institution: {
     type: String,
     required: true
@@ -22,18 +26,18 @@ const adminPostSchema = mongoose.Schema({
     required: true
   },
   kSkillCom: {
-    type: Array,
+    type: String,
     required: true
   },
   techSkills: {
-    type: Array,
+    type: String,
     required: true
   },
   project: {
-    type: Array
+    type: String
   },
   devTask: {
-    type: Array
+    type: String
   },
   workExp: {
     type: String
@@ -42,7 +46,7 @@ const adminPostSchema = mongoose.Schema({
     type: String
   },
   social: {
-    type: Array
+    type: String
   },
   createdAT:{
     type:Date,

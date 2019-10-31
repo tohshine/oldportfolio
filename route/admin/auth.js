@@ -55,7 +55,10 @@ router.post(
       if (!compare) {
         return res.status(400).json({ msg: 'incorrect email or password' });
       }
-      //create payload
+      //?checking if user is admin
+      if (!user.admin)
+        return res.status(401).json({ msg: 'incorrect email or password' });
+      //?create payload
       const payload = {
         user: { id: user._id }
       };
