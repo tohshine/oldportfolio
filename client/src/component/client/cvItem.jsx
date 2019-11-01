@@ -50,8 +50,11 @@ const cvItem = ({ cv }) => {
             <p style={textStyle}>{social}</p>
             <span className="hr" />
 
-           
-            <Link to="/profile" className="btn btn-danger" style={textStyle}>
+            <Link
+              to="/profile"
+              className="btn btn-danger my-2"
+              style={textStyle}
+            >
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
@@ -126,15 +129,14 @@ const text = {
   marginTop: '10px'
 };
 const style = {
-  backgroundColor:'red'
+  backgroundColor: 'red'
 };
 
 const textStyle = {
   marginLeft: '10px',
   marginTop: '10px',
   fontSize: '0.8em',
-  color: 'white',
-  
+  color: 'white'
 };
 
 export default cvItem;
