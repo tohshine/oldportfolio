@@ -57,7 +57,7 @@ const cvItem = ({ cv }) => {
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
-              <span>Github profile</span>
+              <span className="m-2">Github profile</span>
             </Link>
           </div>
           <div>
