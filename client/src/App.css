@@ -6,8 +6,8 @@
   --primary-color: #003699;
   --dark-color: #333333;
   --light-color: #f4f4f4;
-  --danger-color: #FA8072;
-  --success-color:#98FB98;
+  --danger-color: #fa8072;
+  --success-color: #98fb98;
 }
 
 * {
@@ -307,7 +307,7 @@ img {
 .badge-success,
 .alert-success {
   background: var(--success-color);
-  color:green;
+  color: green;
 }
 
 .btn-white,
@@ -443,6 +443,12 @@ table th {
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
+  }
+
+  @media (max-width: 700px) {
+    .grid-2-3 {
+      grid-template-columns: 1fr;
+    }
   }
 
   .grid-2,
