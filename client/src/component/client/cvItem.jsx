@@ -50,14 +50,14 @@ const cvItem = ({ cv }) => {
             <span className="hr" />
              
             <div><strong style={text}>Social</strong></div>
-            <small style={textStyle}>{social}</small>
+            <p style={textStyle}>{social}</p>
             <span className="hr" />
 
-            <Link to="/profile" className="btn btn-danger" style={textStyle}>
+            <Link to="/profile" className="btn btn-danger my-2" style={textStyle}>
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
-              <span className="m-2">Github profile</span>
+              <span>Github profile</span>
             </Link>
           </div>
           <div>
