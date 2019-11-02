@@ -35,25 +35,25 @@ const cvItem = ({ cv }) => {
             </div>
             {/*  personal details  */}
             <div>
-            <small style={textStyle}>
+            <pre style={textStyle}>
               <i className="fas fa-mobile-alt"></i> {phone}
-            </small>
+            </pre>
             </div>
             
-            <small style={textStyle}>
+            <pre style={textStyle}>
               <i className="fas fa-envelope"></i> {email}
-            </small>
+            </pre>
             <span className="hr" />
               
            <div> <strong style={text}>Skills</strong></div>
-            <p style={textStyle}>{techSkills}</p>
+            <pre style={textStyle}>{techSkills}</pre>
             <span className="hr" />
              
             <div><strong style={text}>Social</strong></div>
-            <p style={textStyle}>{social}</p>
+            <pre style={textStyle}>{social}</pre>
             <span className="hr" />
 
-            <Link to="/profile" className="btn btn-danger my-2" style={textStyle}>
+            <Link to="/profile" className="btn btn-danger" style={textStyle}>
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
@@ -65,56 +65,56 @@ const cvItem = ({ cv }) => {
               Personal Summary
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{pSummary}</small>
+              <pre>{pSummary}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Key Skill And Competence
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{kSkillCom}</small>
+              <pre>{kSkillCom}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Technical Skills
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{techSkills}</small>
+              <pre>{techSkills}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Projects
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{project}</small>
+              <pre>{project}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Development Task
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{devTask}</small>
+              <pre>{devTask}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Work Experience
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{workExp}</small>
+              <pre>{workExp}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Educational And Qualifications
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{institution}</small>
+              <pre>{institution}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Past Achievements
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <small>{pastAchieve}</small>
+              <pre>{pastAchieve}</pre>
             </div>
           </div>
         </div>
