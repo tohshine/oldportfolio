@@ -404,7 +404,7 @@ table th {
 }
 
 /*view height*/
-.vh{
+.vh {
   height: 100vh;
 }
 
@@ -461,12 +461,11 @@ table th {
     display: none;
   }
 
-  @media (max-width: 700px) {
-    .grid-2-3 {
-      grid-template-columns: 1fr;
-    }
+  .vh {
+    height: '';
   }
 
+  .grid-2-3,
   .grid-2,
   .grid-3,
   .grid-4 {
