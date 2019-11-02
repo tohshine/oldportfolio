@@ -136,6 +136,14 @@ img {
   margin: 0.7rem 0;
 }
 
+/* center vertically*/
+.img-centered {
+  display: table-cell;
+  height: 300px;
+  border: 1px solid green;
+  vertical-align: middle;
+}
+
 /* List */
 .list {
   margin: 0.5rem 0;

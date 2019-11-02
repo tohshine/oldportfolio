@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AdminState from './context/admin/adminState';
 import ClientState from './context/client/clientState';
 import GithubState from './context/github/githubState';
+import index from './component/pages/index';
 import home from './component/pages/home';
 import register from './component/auth/register';
 import login from './component/auth/login';
@@ -33,7 +34,8 @@ const App = () => {
                 <Fragment>
                  
                   <Switch>
-                    <Route exact path="/" component={home} />
+                    <Route exact path="/" component={index} />
+                    <Route exact path="/home" component={home} />
                     <Route exact path="/profile" component={GitHubProfile} />
                     <PrivateRoute exact path="/admin" component={Admin} />
                     <Route exact path="/register" component={register} />
