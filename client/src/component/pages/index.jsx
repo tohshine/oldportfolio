@@ -14,8 +14,8 @@ const index = () => {
               <span className="text-primary">Experience</span>{' '}
             </h1>
             <p className="my-2">
-               Additional information will be provided upon request and i
-              will be glad to hear back from you.
+              Additional information will be provided upon request and i will be
+              glad to hear back from you.
             </p>
             <div>
               <img
@@ -25,14 +25,16 @@ const index = () => {
               />
             </div>
 
-            <Link to="/home" >
+            <Link to="/home">
               <a href="" className="btn btn-block btn-primary my-2">
                 Goto CV
               </a>
             </Link>
           </div>
-          <div className=" card bg-light img-centered" >
-            <img src="siteImg/onlinecv.png" alt="" />
+          <div>
+            <div className=" card bg-light img-centered">
+              <img src="siteImg/onlinecv.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
