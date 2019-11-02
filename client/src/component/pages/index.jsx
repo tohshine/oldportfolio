@@ -10,7 +10,7 @@ const index = () => {
         <div className="grid-2">
           <div>
             <h1>
-              Breif introduction About myself and my working{' '}
+              Brief introduction About myself and my working{' '}
               <span className="text-primary">Experience</span>{' '}
             </h1>
             <p className="my-2">
