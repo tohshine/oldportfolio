@@ -41,59 +41,59 @@ const CvPostItem = ({ cV }) => {
           </div>
           {/*  contacts */}
 
-          <pre style={text}>
+          <p style={text}>
             <i className="fas fa-mobile-alt"></i> {phone}
-          </pre>
+          </p>
 
-          <pre style={text}>
+          <p style={text}>
             <i className="fas fa-envelope"></i> {email}
-          </pre>
+          </p>
 
           <h6 style={text}> skills--------------------------------------</h6>
-          <pre style={text}>{techSkills}</pre>
+          <p style={text}>{techSkills}</p>
 
           <h6 style={text}> social--------------------------------------</h6>
-          <pre style={text}>{social}</pre>
+          <p style={text}>{social}</p>
         </div>
         <div>
           <h4 className="text-primary">Personal Summary</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{pSummary}</pre>
+            <p>{pSummary}</p>
           </div>
 
           <h4 className="text-primary">Key Skill And Competence</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{kSkillCom}</pre>
+            <p>{kSkillCom}</p>
           </div>
 
           <h4 className="text-primary">Technical Skills</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{techSkills}</pre>
+            <p>{techSkills}</p>
           </div>
 
           <h4 className="text-primary">Projects</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{project}</pre>
+            <p>{project}</p>
           </div>
 
           <h4 className="text-primary">Development Task</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{devTask}</pre>
+            <p>{devTask}</p>
           </div>
 
           <h4 className="text-primary">Work And Experience</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{workExp}</pre>
+            <p>{workExp}</p>
           </div>
 
           <h4 className="text-primary">Educational And Qualification</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{institution}</pre>
+            <p>{institution}</p>
           </div>
 
           <h4 className="text-primary">Past And Achievements</h4>
           <div className="card" style={{ background: 'white' }}>
-            <pre>{pastAchieve}</pre>
+            <p>{pastAchieve}</p>
           </div>
 
           <input
