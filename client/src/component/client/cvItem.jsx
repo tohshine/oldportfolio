@@ -45,7 +45,7 @@ const cvItem = ({ cv }) => {
             </pre>
             <span className="hr" />
               
-           <div> <strong style={text}>Skills</strong></div>
+           <div> <strong style={text}>Technology</strong></div>
             <pre style={textStyle}>{techSkills}</pre>
             <span className="hr" />
              

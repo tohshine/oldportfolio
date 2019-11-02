@@ -49,7 +49,7 @@ const CvPostItem = ({ cV }) => {
             <i className="fas fa-envelope"></i> {email}
           </pre>
 
-          <h6 style={text}> skills--------------------------------------</h6>
+          <h6 style={text}> Technology--------------------------------------</h6>
           <pre style={text}>{techSkills}</pre>
 
           <h6 style={text}> social--------------------------------------</h6>
