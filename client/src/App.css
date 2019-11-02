@@ -462,7 +462,7 @@ table th {
   }
 
   .vh {
-    height: '';
+    height: auto;
   }
 
   .grid-2-3,
