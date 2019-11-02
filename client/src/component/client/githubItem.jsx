@@ -66,7 +66,7 @@ const GithubItem = ({ profile }) => {
     });
   };
   return (
-    <Fragment>
+    <Fragment className="vh">
       <Link to="/home" className="btn btn-light">
         <span>
           <i className="fas fa-backspace"></i>

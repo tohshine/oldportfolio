@@ -400,6 +400,11 @@ table th {
   background: var(--light-color);
 }
 
+/*view height*/
+.vh{
+  height: 100vh;
+}
+
 /* Navbar */
 .navbar {
   display: flex;

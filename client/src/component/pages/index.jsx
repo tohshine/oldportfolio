@@ -6,7 +6,7 @@ const index = () => {
   return (
     <Fragment>
       <Navbar />
-      <div className="container all-center">
+      <div className="container all-center vh">
         <div className="grid-2">
           <div>
             <h1>
