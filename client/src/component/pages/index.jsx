@@ -19,7 +19,7 @@ const index = () => {
             </p>
             <div>
               <img
-                src="siteImg/contactme.png"
+                src="siteImg/whatapp.png"
                 style={{ width: '200px', height: '200px' }}
                 alt=""
               />
