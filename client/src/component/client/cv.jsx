@@ -11,7 +11,7 @@ const Cv = () => {
     getCv();
   }, []);
 
-  if ((cv = null)) {
+  if ((cv === null)) {
     return <Spinner />;
   }
 
