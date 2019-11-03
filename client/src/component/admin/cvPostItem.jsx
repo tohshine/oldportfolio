@@ -66,10 +66,7 @@ const CvPostItem = ({ cV }) => {
             <pre>{kSkillCom}</pre>
           </div>
 
-          <h4 className="text-primary">Technical Skills</h4>
-          <div className="card" style={{ background: 'white' }}>
-            <pre>{techSkills}</pre>
-          </div>
+         
 
           <h4 className="text-primary">Projects</h4>
           <div className="card" style={{ background: 'white' }}>

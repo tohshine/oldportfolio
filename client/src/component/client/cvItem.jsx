@@ -75,12 +75,7 @@ const cvItem = ({ cv }) => {
               <pre>{kSkillCom}</pre>
             </div>
 
-            <h3 className="text-primary" style={{ textAlign: 'left' }}>
-              Technical Skills
-            </h3>
-            <div className="card " style={{ background: 'white' }}>
-              <pre>{techSkills}</pre>
-            </div>
+           
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Projects
