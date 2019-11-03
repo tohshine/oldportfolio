@@ -53,7 +53,7 @@ const cvItem = ({ cv }) => {
             <pre style={textStyle}>{social}</pre>
             <span className="hr" />
 
-            <Link to="/profile" className="btn btn-danger" style={textStyle}>
+            <Link to="/profile" className="btn btn-danger my-2" style={textStyle}>
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
