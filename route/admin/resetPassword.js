@@ -109,7 +109,7 @@ router.post(
       user.tokenExpiry = undefined;
       await user.save();
 
-      return res.send('password has been reset: Login to proceed')
+      return res.send('password has been reset: Login to proceed');
     } catch (error) {
       console.log(error.message);
       res.status(500).json({ msg: 'server down' });

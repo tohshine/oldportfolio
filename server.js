@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 //?json req body
 app.use(express.json({ extended: false }));
 
+app.use('/api/admin', require('./route/admin/resetPassword'));
 app.use('/api/admin/user', require('./route/admin/user'));
 app.use('/api/admin/auth', require('./route/admin/auth'));
 app.use('/api/admin/generate', require('./route/admin/generate'));

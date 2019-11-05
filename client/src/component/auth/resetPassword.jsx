@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, Fragment } from 'react';
 import AuthContext from '../../context/auth/authContext';
 import AlertContext from '../../context/alert/alertContext';
 import Alert from '../layout/Alert';
-import { Redirect } from 'react-router-dom';
+
 
 const ResetPassword = props => {
   const authContext = useContext(AuthContext);
