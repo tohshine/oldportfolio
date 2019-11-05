@@ -7,9 +7,9 @@ const index = () => {
     <Fragment>
       <div className="vh">
         <Navbar />
-        <div className="container all-center  ">
+        <div className="container all-center p-3 ">
           <div className="grid-2">
-            <div className="m-3">
+            <div >
               <h1>
                 Brief introduction About myself and my working{' '}
                 <span className="text-primary">Experience</span>{' '}
@@ -32,8 +32,8 @@ const index = () => {
                 </a>
               </Link>
             </div>
-            <div className="m-3">
-              <div className="m-3">
+            <div >
+              <div >
                 <img src="siteImg/resume.svg" alt="" />
               </div>
             </div>
