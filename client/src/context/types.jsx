@@ -22,6 +22,8 @@ export const LOGOUT = 'LOGOUT';
 export const AUTH_ERROR = 'AUTH_ERROR';
 export const CLEAR_ERROR = 'CLEAR_ERROR';
 export const CLEAR_AUTH_MESSAGE = 'CLEAR_AUTH_MESSAGE';
+export const RESET_MESSAGE = 'RESET_MESSAGE';
+export const VERIFY_TOKEN = 'VERIFY_TOKEN'
 
 //?client post message
 export const POST_MESSAGE = 'POST_MESSAGE';
