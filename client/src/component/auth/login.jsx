@@ -78,7 +78,7 @@ const Login = props => {
               value="Login"
               className="btn btn-block btn-primary"
             />
-            Forgot your password click{' '}
+           <small>Forgot your password click</small> {' '}
             <Link to="/reset-password">here</Link>
           </form>
         </div>

@@ -33,7 +33,7 @@ const index = () => {
           </div>
           <div>
             <div className=" card bg-light img-centered">
-              <img src="siteImg/onlinecv.png" alt="" />
+              <img src="siteImg/resume.svg" alt="" />
             </div>
           </div>
         </div>
