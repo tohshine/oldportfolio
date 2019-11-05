@@ -11,11 +11,12 @@ import GitHubProfile from './component/pages/github';
 import Admin from './component/pages/admin';
 import PrivateRoute from './routing/privateRoute'
 import AlertState from './context/alert/alertState';
-import Alert from './component/layout/Alert';
 import AuthState from './context/auth/authState';
 import setAuthToken from './utils/setAuthToken';
 import about from './component/pages/about'
 import notFoundPage from './component/pages/NotFoundPage'
+import resetPassword from './component/auth/resetPassword'
+import changePassword from './component/auth/changePassword'
 
 import './App.css';
 
@@ -41,6 +42,8 @@ const App = () => {
                     <Route exact path="/register" component={register} />
                     <Route exact path="/login" component={login} />
                     <Route exact path="/about" component={about} />
+                    <Route exact path="/reset-password" component={resetPassword} />
+                    <Route exact path="/reset/:token" component={changePassword} />
                     <Route component={notFoundPage} />
                   </Switch>
                 </Fragment>
