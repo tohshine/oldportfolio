@@ -9,7 +9,7 @@ const index = () => {
         <Navbar />
         <div className="container all-center p-3 ">
           <div className="grid-2">
-            <div >
+            <div>
               <h1>
                 Brief introduction About myself and my working{' '}
                 <span className="text-primary">Experience</span>{' '}
@@ -32,15 +32,29 @@ const index = () => {
                 </a>
               </Link>
             </div>
-            <div >
-              <div >
+            <div>
+              <div className="cover">
                 <img src="siteImg/resume.svg" alt="" />
               </div>
+              <img
+                className="big-circle"
+                src="siteImg/big-eclipse.svg"
+                alt=""
+              />
+              <img
+                className="medium-circle"
+                src="siteImg/mid-eclipse.svg"
+                alt=""
+              />
+              <img
+                className="small-circle"
+                src="siteImg/small-eclipse.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-     
     </Fragment>
   );
 };
