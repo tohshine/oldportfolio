@@ -190,7 +190,11 @@ const GithubItem = ({ profile }) => {
         </div>
 
         <div>
+<<<<<<< HEAD
           <img src="siteImg/thanks.png" alt="" />
+=======
+          <img src="siteImg/thanks.svg" alt="" />
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d
         </div>
       </div>
     </Fragment>

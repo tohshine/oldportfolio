@@ -35,30 +35,25 @@ const cvItem = ({ cv }) => {
             </div>
             {/*  personal details  */}
             <div>
-              <pre style={textStyle}>
-                <i className="fas fa-mobile-alt"></i> {phone}
-              </pre>
+            <pre style={textStyle}>
+              <i className="fas fa-mobile-alt"></i> {phone}
+            </pre>
             </div>
-
+            
             <pre style={textStyle}>
               <i className="fas fa-envelope"></i> {email}
             </pre>
             <span className="hr" />
-
-            <div>
-              {' '}
-              <strong style={text}>Skills</strong>
-            </div>
+              
+           <div> <strong style={text}>Technology</strong></div>
             <pre style={textStyle}>{techSkills}</pre>
             <span className="hr" />
-
-            <div>
-              <strong style={text}>Social</strong>
-            </div>
+             
+            <div><strong style={text}>Social</strong></div>
             <pre style={textStyle}>{social}</pre>
             <span className="hr" />
 
-            <Link to="/profile" className="btn btn-danger" style={textStyle}>
+            <Link to="/profile" className="btn btn-danger my-2" style={textStyle}>
               <span>
                 <i className="fab fa-github"></i>
               </span>{' '}
@@ -80,12 +75,14 @@ const cvItem = ({ cv }) => {
               <pre>{kSkillCom}</pre>
             </div>
 
-            {/*<h3 className="text-primary" style={{ textAlign: 'left' }}>
+           
+
+            <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Projects
             </h3>
             <div className="card " style={{ background: 'white' }}>
               <pre>{project}</pre>
-            </div>*/}
+            </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Development Task
@@ -134,7 +131,7 @@ const textStyle = {
   marginTop: '10px',
   fontSize: '0.8em',
   color: 'white',
-  textAllign: 'center'
+  textAllign:'center'
 };
 
 export default cvItem;

@@ -9,7 +9,11 @@
   --primary-color: #003699;
   --dark-color: #333333;
   --light-color: #f4f4f4;
+<<<<<<< HEAD:client/src/App.less
   --danger-color: #FF7D6B;
+=======
+  --danger-color: #fa8072;
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d:client/src/App.css
   --success-color: #98fb98;
 }
 
@@ -113,6 +117,9 @@ img {
 
 .text-left {
   text-align: left;
+}
+pre {
+  white-space: pre-wrap;
 }
 
 pre {
@@ -351,6 +358,8 @@ pre {
   border-radius: 50%;
 }
 
+
+
 /* Forms */
 input {
   margin: 1.2rem 0;
@@ -411,9 +420,16 @@ table th {
   background: var(--light-color);
 }
 
+<<<<<<< HEAD:client/src/App.less
 /* view height*/
 .vh {
   height: 100vh;
+=======
+/*view height*/
+.vh {
+  height: 100vh;
+  align-items: center;
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d:client/src/App.css
 }
 
 /* Navbar */
@@ -469,12 +485,20 @@ table th {
     display: none;
   }
 
+<<<<<<< HEAD:client/src/App.less
   @media (max-width: 700px) {
     .grid-2-3 {
       grid-template-columns: 1fr;
     }
   }
 
+=======
+  .vh {
+    height: 100vh;
+  }
+
+  .grid-2-3,
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d:client/src/App.css
   .grid-2,
   .grid-3,
   .grid-4 {
@@ -509,6 +533,7 @@ table th {
     justify-content: center;
   }
 }
+<<<<<<< HEAD:client/src/App.less
 /** image background cover */
 header {
   background: url('https://res.cloudinary.com/dlecos9op/image/upload/c_scale,w_1400/v1585305697/IMG_20200326_125425_785_htjocx.jpg')
@@ -525,3 +550,37 @@ header {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+=======
+
+/*extra features*/
+.cover  img{
+  filter: drop-shadow(0px 5px 3px black);
+ 
+}
+.big-circle {
+	position: absolute;
+	top: 0px;
+  right: 0px;
+  width: auto;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+  right: 30%;
+  width: auto;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+  left: 20%;
+  width: auto;
+	z-index: -1;
+}
+
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d:client/src/App.css

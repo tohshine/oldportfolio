@@ -47,7 +47,11 @@ router.post('/reset-password', (req, res) => {
         html:
           `You are  receiving this because you (or someone else) have requested the reset of your password for your account.\n\n` +
           `Please click on the following link, or paste this into your browser to complete the process within one hour of receiving it:\n\n` +
+<<<<<<< HEAD
           `<p>password reset <a href="http://localhost:3000/reset/${token}">link</a></p>\n\n` +
+=======
+          `<p>password reset <a href="http://tohshine.herokuapp.com/reset/${token}">link</a></p>\n\n` +
+>>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d
           `If you did not request this, please ignore this email and your password will remain unchanged.\n`
       });
 

@@ -10,7 +10,7 @@ const Alert = () => {
       {alert.length > 0 &&
         alert.map(al => (
           <div key={al.id} className={`alert alert-${al.type}`}>
-            <i className="fa fa-info-circle"></i> {al.msg}
+            <i className="fa fa-info-circle"></i> <small>{al.msg}</small>
           </div>
         ))}
     </Fragment>
