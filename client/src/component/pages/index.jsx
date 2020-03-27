@@ -1,16 +1,11 @@
 import React, { Fragment } from 'react';
-<<<<<<< HEAD
 import Navbar from '../../component/layout/navbar';
 import About from '../pages/about';
-=======
-import Navbar from '../client/Navbar';
->>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d
 import { Link } from 'react-router-dom';
 
 const index = () => {
   return (
     <Fragment>
-<<<<<<< HEAD
       <Navbar />
       <About />
       <div className="container " id="project">
@@ -116,55 +111,6 @@ const index = () => {
               <img src="./link.png" style={{ width: '15px' }} alt="" />
               Launch
             </button>
-=======
-      <div className="vh">
-        <Navbar />
-        <div className="container all-center p-3 ">
-          <div className="grid-2">
-            <div>
-              <h1>
-                Brief introduction About myself and my working{' '}
-                <span className="text-primary">Experience</span>{' '}
-              </h1>
-              <p className="my-2">
-                Additional information will be provided upon request and i will
-                be glad to hear back from you.
-              </p>
-              <div>
-                <img
-                  src="siteImg/whatapp.png"
-                  style={{ width: '200px', height: '200px' }}
-                  alt=""
-                />
-              </div>
-
-              <Link to="/home">
-                <a href="" className="btn btn-block btn-primary my-2">
-                  Goto CV
-                </a>
-              </Link>
-            </div>
-            <div>
-              <div className="cover">
-                <img src="siteImg/resume.svg" alt="" />
-              </div>
-              <img
-                className="big-circle"
-                src="siteImg/big-eclipse.svg"
-                alt=""
-              />
-              <img
-                className="medium-circle"
-                src="siteImg/mid-eclipse.svg"
-                alt=""
-              />
-              <img
-                className="small-circle"
-                src="siteImg/small-eclipse.svg"
-                alt=""
-              />
-            </div>
->>>>>>> 2531b3f8f93238597ea9c9998fe5f4cfbd16b52d
           </div>
         </div>
       </div>
