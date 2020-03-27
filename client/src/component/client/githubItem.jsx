@@ -66,8 +66,8 @@ const GithubItem = ({ profile }) => {
     });
   };
   return (
-    <Fragment>
-      <Link to="/" className="btn btn-light">
+    <Fragment className="vh">
+      <Link to="/home" className="btn btn-light">
         <span>
           <i className="fas fa-backspace"></i>
         </span>{' '}
@@ -138,47 +138,60 @@ const GithubItem = ({ profile }) => {
           </ul>
         </div>
       </div>
-      <div className="form-container">
-        {/* //?alert notification */}
-        <Alert />
-        <form onSubmit={onSubmit} novalidate>
-          <div className="card bg-light">
-            <h3 className="text-center">
-              Message <span className="text-primary">ME</span>
-            </h3>
+      <div className="grid-2">
+        <div>
+          <div className="form-container">
+            {/* //?alert notification */}
+            <Alert />
+            <form onSubmit={onSubmit} novalidate>
+              <div className="card bg-light">
+                <h3 className="text-center">
+                  Message <span className="text-primary">ME</span>
+                </h3>
 
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" value={name} onChange={onChange} />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="text"
-                name="email"
-                value={email}
-                onChange={onChange}
-              />
-            </div>
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={onChange}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    value={email}
+                    onChange={onChange}
+                  />
+                </div>
 
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                name="message"
-                cols="30"
-                rows="5"
-                value={message}
-                onChange={onChange}
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              className="btn btn-primary btn-block "
-              value="Send"
-              onSubmit={onSubmit}
-            />
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    name="message"
+                    cols="30"
+                    rows="5"
+                    value={message}
+                    onChange={onChange}
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  className="btn btn-primary btn-block "
+                  value="Send"
+                  onSubmit={onSubmit}
+                />
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
+
+        <div>
+          <img src="siteImg/thanks.png" alt="" />
+        </div>
       </div>
     </Fragment>
   );

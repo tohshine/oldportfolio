@@ -1,9 +1,9 @@
 import React, { Fragment, useContext, useEffect, useState } from 'react';
 import AuthContext from '../../context/auth/authContext';
 import AlertContent from '../../context/alert/alertContext';
+import { Link } from 'react-router-dom';
 
 import Alert from '../layout/Alert';
-import Spinner from '../layout/spinner';
 
 const Login = props => {
   const authContext = useContext(AuthContext);
@@ -50,6 +50,9 @@ const Login = props => {
     clearError();
   };
 
+  const forgotPassword = () => {
+    console.log('passwordforget');
+  };
   return (
     <Fragment>
       <div className="form-container">
@@ -65,17 +68,18 @@ const Login = props => {
               <label htmlFor="email">Email</label>
               <input type="email" name="email" onChange={onChange} />
             </div>
-
             <div className="form-group">
               <label htmlFor="password">Password</label>
               <input type="password" name="password" onChange={onChange} />
             </div>
-
             <input
+              onSubmit={onSubmit}
               type="submit"
               value="Login"
               className="btn btn-block btn-primary"
             />
+            Forgot your password click{' '}
+            <Link to="/reset-password">here</Link>
           </form>
         </div>
       </div>

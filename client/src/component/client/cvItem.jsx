@@ -30,27 +30,34 @@ const cvItem = ({ cv }) => {
                 style={{ width: '100px', height: '100px', marginTop: '10px' }}
                 className="round-img"
               />
-              <h1>{name}</h1>
+              <h1 className="text-light">{name}</h1>
               <strong>{title}</strong>
             </div>
             {/*  personal details  */}
-            <p style={textStyle}>
-              <i className="fas fa-mobile-alt"></i> {phone}
-            </p>
-            <p style={textStyle}>
+            <div>
+              <pre style={textStyle}>
+                <i className="fas fa-mobile-alt"></i> {phone}
+              </pre>
+            </div>
+
+            <pre style={textStyle}>
               <i className="fas fa-envelope"></i> {email}
-            </p>
+            </pre>
             <span className="hr" />
 
-            <strong style={text}>Skills</strong>
-            <p style={textStyle}>{techSkills}</p>
+            <div>
+              {' '}
+              <strong style={text}>Skills</strong>
+            </div>
+            <pre style={textStyle}>{techSkills}</pre>
             <span className="hr" />
 
-            <strong style={text}>Social</strong>
-            <p style={textStyle}>{social}</p>
+            <div>
+              <strong style={text}>Social</strong>
+            </div>
+            <pre style={textStyle}>{social}</pre>
             <span className="hr" />
 
-           
             <Link to="/profile" className="btn btn-danger" style={textStyle}>
               <span>
                 <i className="fab fa-github"></i>
@@ -63,56 +70,49 @@ const cvItem = ({ cv }) => {
               Personal Summary
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{pSummary}</p>
+              <pre>{pSummary}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Key Skill And Competence
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{kSkillCom}</p>
+              <pre>{kSkillCom}</pre>
             </div>
 
-            <h3 className="text-primary" style={{ textAlign: 'left' }}>
-              Technical Skills
-            </h3>
-            <div className="card " style={{ background: 'white' }}>
-              <p>{techSkills}</p>
-            </div>
-
-            <h3 className="text-primary" style={{ textAlign: 'left' }}>
+            {/*<h3 className="text-primary" style={{ textAlign: 'left' }}>
               Projects
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{project}</p>
-            </div>
+              <pre>{project}</pre>
+            </div>*/}
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Development Task
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{devTask}</p>
+              <pre>{devTask}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Work Experience
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{workExp}</p>
+              <pre>{workExp}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Educational And Qualifications
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{institution}</p>
+              <pre>{institution}</pre>
             </div>
 
             <h3 className="text-primary" style={{ textAlign: 'left' }}>
               Past Achievements
             </h3>
             <div className="card " style={{ background: 'white' }}>
-              <p>{pastAchieve}</p>
+              <pre>{pastAchieve}</pre>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ const text = {
   marginTop: '10px'
 };
 const style = {
-  backgroundColor:'red'
+  backgroundColor: 'red'
 };
 
 const textStyle = {
@@ -134,7 +134,7 @@ const textStyle = {
   marginTop: '10px',
   fontSize: '0.8em',
   color: 'white',
-  
+  textAllign: 'center'
 };
 
 export default cvItem;

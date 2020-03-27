@@ -6,7 +6,9 @@ import {
   REGISTER_SUCCESS,
   AUTH_ERROR,
   LOGOUT,
-  CLEAR_ERROR
+  CLEAR_ERROR,
+  RESET_MESSAGE,
+  VERIFY_TOKEN
 } from '../types';
 
 const authReducer = (state, action) => {
@@ -25,9 +27,24 @@ const authReducer = (state, action) => {
         ...state,
         ...action.payload,
         isAuthenticated: true,
-        loading: false,
-        
+        loading: false
       };
+
+    case RESET_MESSAGE:
+      localStorage.removeItem('resetToken');
+      return {
+        ...state,
+        resetMessage: action.payload,
+        resetToken: null
+      };
+    case VERIFY_TOKEN:
+      localStorage.setItem('resetToken', action.payload.msg);
+      return {
+        ...state,
+        isValidToken: true,
+        resetToken: action.payload.msg
+      };
+
     case REGISTER_SUCCESS:
       localStorage.setItem('token', action.payload.token);
       return {
@@ -46,7 +63,8 @@ const authReducer = (state, action) => {
         loading: true,
         token: null,
         error: action.payload,
-        user: null
+        user: null,
+        resetMessage: null
       };
 
     case CLEAR_ERROR:
@@ -64,8 +82,7 @@ const authReducer = (state, action) => {
         loading: true,
         token: null,
         error: null,
-        user: null,
-       
+        user: null
       };
 
     default:

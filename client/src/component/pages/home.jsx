@@ -4,7 +4,7 @@ import NavBar from '../client/Navbar';
 
 const home = () => {
   return (
-    <div>
+    <div >
       <NavBar />
       <Cv />
     </div>

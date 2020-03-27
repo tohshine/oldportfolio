@@ -20,7 +20,7 @@ const Navbar = ({ title, icon }) => {
 
 Navbar.defaultProps = {
   title: 'My profile CV',
-  icon: <i className=" fa fa-book"></i>
+  icon: <i className="far fa-file-alt"></i>
 };
 
 export default Navbar;
