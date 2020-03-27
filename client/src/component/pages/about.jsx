@@ -7,7 +7,7 @@ const about = () => {
         <p className="bg-danger  ">
           <strong className="text-light p-1 ">About Me</strong>
         </p>
-        <div className=" card grid-2">
+        <div data-aos="fade-right" className=" card grid-2">
           <div className="all-center">
             <strong>
               {' '}
@@ -22,7 +22,7 @@ const about = () => {
               institution.
             </strong>
           </div>
-          <div className="">
+          <div data-aos="fade-left"  className="">
             <img
               style={{ borderRadius: '10px' }}
               src="twitter.jpg"

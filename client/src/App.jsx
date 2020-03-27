@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AdminState from './context/admin/adminState';
 import ClientState from './context/client/clientState';
@@ -17,11 +17,19 @@ import about from './component/pages/about'
 import notFoundPage from './component/pages/NotFoundPage'
 import resetPassword from './component/auth/resetPassword'
 import changePassword from './component/auth/changePassword'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 import './App.less';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200
+    });
+  });
+
   if (localStorage.token) {
     setAuthToken(localStorage.token);
   }

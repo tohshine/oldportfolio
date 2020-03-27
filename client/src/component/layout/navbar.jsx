@@ -48,16 +48,20 @@ const navbar = () => {
         className="container"
         style={{ paddingLeft: '30px', paddingRight: '30px' }}
       >
-        <div data-aos="fade-left" className="grid-2">
+        <div className="grid-2">
           <div>
-            <h1 className="text-light large text-light all-center">
+            <h1
+              data-aos="fade-left"
+              className="text-light large text-light all-center"
+            >
               Hello, I'm <span className="text-danger">TOSIN OWOEYE</span>
             </h1>
-            <p className="text-light lead all-center p-3">
+            <p data-aos="fade-right" className="text-light lead all-center p-3">
               A Fullstack MERN developer
             </p>
-              
+
             <Link
+              data-aos="fade-out"
               to="/home"
               type="submit"
               className="btn btn-block btn-primary text-light text-center"
