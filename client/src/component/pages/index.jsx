@@ -24,10 +24,10 @@ const index = () => {
                 {' '}
                 <span style={{ color: '#5E8B56' }}>
                   <i
-                    className="fab fa-react"
+                    className="fab fa-node"
                     style={{ fontSize: '25px', color: '#5E8B56' }}
                   ></i>
-                  Node
+                  
                 </span>
                 |{' '}
                 <span style={{ color: '#53B1CC' }}>
@@ -73,10 +73,10 @@ const index = () => {
                 {' '}
                 <span style={{ color: '#5E8B56' }}>
                   <i
-                    className="fab fa-react"
+                    className="fab fa-node"
                     style={{ fontSize: '25px', color: '#5E8B56' }}
                   ></i>
-                  Node
+                 
                 </span>
                 | {' '} 
                 <span style={{ color: '#53B1CC' }}>
