@@ -157,6 +157,47 @@ export const project = () => {
           Launch
         </button>
       </div>
+      <div>
+        <strong>
+          Title: <span>Covid-19</span>
+        </strong>
+        <br />
+        <strong>
+          Technology :{' '}
+          <span>
+            {' '}
+            <span style={{ color: '#5E8B56' }}>
+              <i
+                className="fab fa-node"
+                style={{ fontSize: '25px', color: '#5E8B56' }}
+              ></i>
+             
+            </span>
+            | {' '} 
+            <span style={{ color: '#53B1CC' }}>
+              <i
+                className="fab fa-react"
+                style={{ fontSize: '25px', color: '#53B1CC' }}
+              ></i>
+              React
+            </span>
+
+            
+          </span>
+        </strong>
+        <img src="./covid19.jpg" alt="covid19apps" />
+        <button
+          type="submit"
+          className="btn btn-sm bg-primary my-2"
+          style={{ borderRadius: '10px' }}
+          onClick={() => {
+            window.open('http://covid19apps.herokuapp.com/');
+          }}
+        >
+          <img src="./link.png" style={{ width: '15px' }} alt="" />
+          Launch
+        </button>
+      </div>
 
     </div>
   </div>
